@@ -144,7 +144,10 @@
 
             messagesBox.appendChild(messageDiv)
 	    
-	    messagesBox.scrollTop = messagesBox.scrollHeight
+	        messagesBox.scrollTop = messagesBox.scrollHeight
+            
+            //Send a 200ms vibration notification for mobile devices
+            window.navigator.vibrate(200)
         })
     </script>
 </body>
